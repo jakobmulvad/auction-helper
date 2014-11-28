@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "WoW Auction Helper",
+  "version": "1.0",
+  "description": "Extends the WoW web auction interface with convenience functionality",
+  "content_scripts": [
+    {
+      "matches": ["https://*.battle.net/wow/en/vault/character/auction/create*"],
+      "js": ["auction-helper.js"]
+    }
+  ]
+}
